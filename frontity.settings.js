@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@motifsmedia/motifs-frontity-theme",
+      "name": "@frontity/mars-theme",
       "state": {
         "theme": {
           "menu": [
