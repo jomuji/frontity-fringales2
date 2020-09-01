@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": "@frontity/frontity-chakra-theme",
       "state": {
         "theme": {
           "menu": [
