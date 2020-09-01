@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.1",
+  "hash": "da6af577330fe9d89add",
+  "publicPath": "/static/",
+  "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
+  "assetsByChunkName": {
+    "frontity-fringales2": "frontity-fringales2.module.js",
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "frontity-fringales2.module.js",
+      "size": 5073130,
+      "chunks": [
+        "frontity-fringales2"
+      ],
+      "chunkNames": [
+        "frontity-fringales2"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 48417,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "frontity-fringales2": {
+      "chunks": [
+        "frontity-fringales2"
+      ],
+      "assets": [
+        "frontity-fringales2.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "frontity-fringales2": {
+      "chunks": [
+        "frontity-fringales2"
+      ],
+      "assets": [
+        "frontity-fringales2.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
