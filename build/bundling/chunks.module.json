@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "da6af577330fe9d89add",
+  "hash": "e3ea14d2f5d112714048",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
     "frontity-fringales2": "frontity-fringales2.module.js",
-    "list": "list.module.js"
+    "vendors~list": "vendors~list.module.js"
   },
   "assets": [
     {
       "name": "frontity-fringales2.module.js",
-      "size": 5073130,
+      "size": 9607537,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -23,13 +23,13 @@
       "emitted": false
     },
     {
-      "name": "list.module.js",
-      "size": 48417,
+      "name": "vendors~list.module.js",
+      "size": 48053,
       "chunks": [
-        "list"
+        "vendors~list"
       ],
       "chunkNames": [
-        "list"
+        "vendors~list"
       ],
       "info": {},
       "emitted": false
@@ -61,10 +61,10 @@
     },
     "list": {
       "chunks": [
-        "list"
+        "vendors~list"
       ],
       "assets": [
-        "list.module.js"
+        "vendors~list.module.js"
       ],
       "children": {},
       "childAssets": {}

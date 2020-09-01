@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/frontity-chakra-theme",
+      "name": "@motifsmedia/motifs-frontity-theme",
       "state": {
         "theme": {
           "menu": [
