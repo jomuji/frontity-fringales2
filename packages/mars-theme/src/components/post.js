@@ -20,6 +20,13 @@ const Post = ({ state, actions, libraries }) => {
   // ACF
   const liste_dingredients = post.acf["liste_dingredients"];
   const liste_detapes = post.acf["liste_detapes"];
+  const recipe_serves = post.acf["recipe_serves"];
+  const recipe_preparation_time = post.acf["recipe_preparation_time"];
+  const recipe_just_cooking_time = post.acf["recipe_just_cooking_time"];
+  const recipe_cooking_time = post.acf["recipe_cooking_time"];
+  const recipe_cooking_temperature = post.acf["recipe_cooking_temperature"];
+
+
   const categories_names = post["categories_names"];
 
   /**
@@ -46,8 +53,45 @@ const Post = ({ state, actions, libraries }) => {
                 
               </div>
           </div>
-      
-      <div className="container py-5">
+
+          <div className="content container py-5">
+
+          <div class="card recette mb-3 my-5 rounded-0" >
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <FeaturedMedia id={post.featured_media} className="card-img mt-0"/>
+              </div>
+              <div class="col-md-4 p-0">
+                <div class="card-body h-100 p-5">
+                  
+                  {(recipe_serves !== "") && <div><Html2React html={recipe_serves} /> Personnes</div>}
+                  {(recipe_preparation_time !== "") && <div><span>Préparation</span> <Html2React html={recipe_preparation_time} /></div>}
+                  {(recipe_just_cooking_time !== "") && <div>Cuisson <Html2React html={recipe_just_cooking_time} /></div>}
+                  {(recipe_cooking_time !== "") && <div>Temps total <Html2React html={recipe_cooking_time} /></div>}
+                  {(recipe_cooking_temperature !== "") && <div>Température <Html2React html={recipe_cooking_temperature} /></div>}
+
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row ingredients-etapes my-5">
+            
+            <div className="col-12 col-sm-6">
+              <div className="card rounded-0 p-5 h-100">
+                <h3>Ingrédients</h3>
+                <Html2React html={liste_dingredients} />
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-6">
+              <div className="card rounded-0 p-5 h-100">
+                <h3>Étapes</h3>
+                <Html2React html={liste_detapes} />
+              </div>
+            </div>
+          </div>
         
 
         {/* Only display author and date on posts */}
@@ -66,11 +110,8 @@ const Post = ({ state, actions, libraries }) => {
               {" "}
               on <b>{date.toDateString()}</b>
             </DateWrapper>
-            <div className="row">
             
-              <div className="col-12 col-sm-6"><Html2React html={liste_dingredients} /></div>
-              <div className="col-12 col-sm-6"><Html2React html={liste_detapes} /></div>
-            </div>
+
             
           </Fragment>
         )}
@@ -94,11 +135,47 @@ const Container = styled.div`
   width: 100%;
   margin: 0;
   padding: 0;
+
 .card.header{
   background:#000;
-}
+
   .featured-image2{
     opacity:0.4;
+  }
+}
+
+.card.recette{
+
+  .card-body{
+    background-color: #44CFCB;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+  
+
+  .ingredients-etapes{
+    .card{
+      background:#F6F5AE;
+      color:#2E0014;
+
+      h3{
+        color:#2E0014;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      ul, ol{
+        font-size: 18px;
+        padding:0;
+
+        li{
+          padding: 15px 0;
+          border-top: 1px solid #44CFCB;
+        }
+      }
+    }
   }
 `;
 

@@ -7,6 +7,7 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+//import '/style.css';
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -24,6 +25,7 @@ const Theme = ({ state }) => {
         <meta name="description" content={state.frontity.description} />
         <html lang="fr" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        
         <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&family=Pacifico&display=swap" rel="stylesheet" />
       </Head>
 
@@ -55,7 +57,7 @@ export default connect(Theme);
 const globalStyles = css`
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", 
       "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   a,
@@ -69,15 +71,11 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #1f38c5;
+  
 `;
 
 const Main = styled.div`
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
+  background-color:#F5F2F8;
 `;

@@ -8,7 +8,7 @@ import ReactLogo from './crazy.svg';
 const Header = ({ state }) => {
   return (
     <>
-      <Container className="navbar navbar-expand-lg navbar-light bg-light">
+      <Container className="navbar navbar-expand-lg navbar-light bg-white">
         <StyledLink link="/" className="navbar-brand">
         <img src={ReactLogo} className="logo" alt="React Logo" width="40px" /><Title>FOOD <span>la bouffe</span>{/* {state.frontity.title} */}</Title>
         </StyledLink>
