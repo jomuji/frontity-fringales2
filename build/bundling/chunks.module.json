@@ -2,17 +2,46 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "e3ea14d2f5d112714048",
+  "hash": "2f6dbe24c7faac5381f0",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
-    "frontity-fringales2": "frontity-fringales2.module.js",
-    "vendors~list": "vendors~list.module.js"
+    "frontity-fringales2": [
+      "frontity-fringales2.module.js",
+      "frontity-fringales2.14dae377e8292e0f827d.hot-update.js"
+    ],
+    "list": "list.module.js"
   },
   "assets": [
     {
+      "name": "14dae377e8292e0f827d.hot-update.json",
+      "size": 61,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "frontity-fringales2.14dae377e8292e0f827d.hot-update.js",
+      "size": 12657,
+      "chunks": [
+        "frontity-fringales2"
+      ],
+      "chunkNames": [
+        "frontity-fringales2"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "frontity-fringales2.module.js",
-      "size": 9607537,
+      "size": 5105325,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -23,13 +52,21 @@
       "emitted": false
     },
     {
-      "name": "vendors~list.module.js",
-      "size": 48053,
+      "name": "images/crazy.svg",
+      "size": 1759,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 48417,
       "chunks": [
-        "vendors~list"
+        "list"
       ],
       "chunkNames": [
-        "vendors~list"
+        "list"
       ],
       "info": {},
       "emitted": false
@@ -42,7 +79,8 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js"
+        "frontity-fringales2.module.js",
+        "frontity-fringales2.14dae377e8292e0f827d.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -54,17 +92,18 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js"
+        "frontity-fringales2.module.js",
+        "frontity-fringales2.14dae377e8292e0f827d.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "list": {
       "chunks": [
-        "vendors~list"
+        "list"
       ],
       "assets": [
-        "vendors~list.module.js"
+        "list.module.js"
       ],
       "children": {},
       "childAssets": {}

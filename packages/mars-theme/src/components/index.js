@@ -22,7 +22,9 @@ const Theme = ({ state }) => {
       <Title />
       <Head>
         <meta name="description" content={state.frontity.description} />
-        <html lang="en" />
+        <html lang="fr" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&family=Pacifico&display=swap" rel="stylesheet" />
       </Head>
 
       {/* Add some global styles for the whole site, like body or a's. 

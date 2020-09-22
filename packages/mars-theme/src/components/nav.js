@@ -8,14 +8,14 @@ import Link from "./link";
  * It renders the navigation links
  */
 const Nav = ({ state }) => (
-  <NavContainer>
+  <NavContainer className="navbar-nav ml-auto">
     {state.theme.menu.map(([name, link]) => {
       // Check if the link matched the current page url
       const isCurrentPage = state.router.link === link;
       return (
-        <NavItem key={name}>
+        <NavItem key={name} className="nav-item">
           {/* If link url is the current page, add `aria-current` for a11y */}
-          <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
+          <Link link={link} aria-current={isCurrentPage ? "page" : undefined} className="nav-link">
             {name}
           </Link>
         </NavItem>
@@ -26,10 +26,9 @@ const Nav = ({ state }) => (
 
 export default connect(Nav);
 
-const NavContainer = styled.nav`
+const NavContainer = styled.ul`
   list-style: none;
   display: flex;
-  width: 848px;
   max-width: 100%;
   box-sizing: border-box;
   padding: 0 24px;
@@ -41,7 +40,7 @@ const NavContainer = styled.nav`
   }
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.li`
   padding: 0;
   margin: 0 16px;
   color: #fff;

@@ -14,24 +14,32 @@ const settings = {
         "theme": {
           "menu": [
             [
-              "Home",
-              "/"
+              "Plats principaux",
+              "/category/plats-principaux/"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "Soupes et pottages",
+              "/category/soupes/"
             ],
             [
-              "Travel",
-              "/category/travel/"
+              "Desserts",
+              "/category/desserts/"
             ],
             [
-              "Japan",
-              "/tag/japan/"
+              "Accompagnements",
+              "/category/accompagnements/"
             ],
             [
-              "About Us",
-              "/about-us/"
+              "Entrées et apéros",
+              "/category/entrees-apero/"
+            ],
+            [
+              "Salades et sandwichs",
+              "/category/salades/"
+            ],
+            [
+              "Déjeuner et brunch",
+              "/category/dejeuner-et-brunch/"
             ]
           ],
           "featured": {

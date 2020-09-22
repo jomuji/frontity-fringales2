@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Fragment } from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
@@ -17,6 +17,11 @@ const Post = ({ state, actions, libraries }) => {
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
 
+  // ACF
+  const liste_dingredients = post.acf["liste_dingredients"];
+  const liste_detapes = post.acf["liste_detapes"];
+  const categories_names = post["categories_names"];
+
   /**
    * Once the post has loaded in the DOM, prefetch both the
    * home posts and the list component so if the user visits
@@ -30,12 +35,26 @@ const Post = ({ state, actions, libraries }) => {
   // Load the post, but only if the data is ready.
   return data.isReady ? (
     <Container>
-      <div>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+      {/* Look at the settings to see if we should include the featured image */}
+          <div className="card header text-white rounded-0">
+              {state.theme.featured.showOnPost && (
+                <FeaturedMedia id={post.featured_media} className="card-img mt-0"/>
+              )}
+              <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                <Categorie_name><Html2React html={categories_names[0]} /></Categorie_name>
+                <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} className="display-4 text-center w-75" />
+                
+              </div>
+          </div>
+      
+      <div className="container py-5">
+        
 
         {/* Only display author and date on posts */}
         {data.isPost && (
-          <div>
+          <Fragment>
+             
+
             {author && (
               <StyledLink link={author.link}>
                 <Author>
@@ -47,19 +66,23 @@ const Post = ({ state, actions, libraries }) => {
               {" "}
               on <b>{date.toDateString()}</b>
             </DateWrapper>
-          </div>
+            <div className="row">
+            
+              <div className="col-12 col-sm-6"><Html2React html={liste_dingredients} /></div>
+              <div className="col-12 col-sm-6"><Html2React html={liste_detapes} /></div>
+            </div>
+            
+          </Fragment>
         )}
       </div>
 
-      {/* Look at the settings to see if we should include the featured image */}
-      {state.theme.featured.showOnPost && (
-        <FeaturedMedia id={post.featured_media} />
-      )}
+      
 
       {/* Render the content using the Html2React component so the HTML is processed
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
         <Html2React html={post.content.rendered} />
+        
       </Content>
     </Container>
   ) : null;
@@ -68,16 +91,27 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 800px;
+  width: 100%;
   margin: 0;
-  padding: 24px;
+  padding: 0;
+.card.header{
+  background:#000;
+}
+  .featured-image2{
+    opacity:0.4;
+  }
+`;
+
+const Categorie_name = styled.h2`
+  color: #44CFCB;
+  font-family: 'Pacifico', cursive;
 `;
 
 const Title = styled.h1`
-  margin: 0;
-  margin-top: 24px;
+  
   margin-bottom: 8px;
-  color: rgba(12, 17, 43);
+  color: #fff;
+  
 `;
 
 const StyledLink = styled(Link)`
@@ -192,6 +226,18 @@ const Content = styled.div`
     border-radius: 4px;
     color: #fff;
     background-color: #1f38c5;
+  }
+
+  .card{
+    border-radius: 0;
+    background-color:red!important;
+
+    img{
+      opacity:0.4;
+    }
+  }
+  .featured-image2{
+    opacity:0.5;
   }
 
   /* WordPress Core Align Classes */
