@@ -4,6 +4,12 @@ import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
 
+import people from './svg/customer.svg';
+import apron from './svg/apron.svg';
+import cookingtime from './svg/cooking-time.svg';
+import meal from './svg/meal.svg';
+import gasstove from './svg/gas-stove.svg';
+
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
@@ -56,19 +62,19 @@ const Post = ({ state, actions, libraries }) => {
 
           <div className="content container py-5">
 
-          <div class="card recette mb-3 my-5 rounded-0" >
-            <div class="row no-gutters">
-              <div class="col-md-8">
+          <div className="card recette mb-3 my-5 rounded-0" >
+            <div className="row no-gutters">
+              <div className="col-md-8">
                 <FeaturedMedia id={post.featured_media} className="card-img mt-0"/>
               </div>
-              <div class="col-md-4 p-0">
-                <div class="card-body h-100 p-5">
+              <div className="col-md-4 p-0">
+                <div className="card-body h-100 p-5 d-flex flex-column justify-content-between">
                   
-                  {(recipe_serves !== "") && <div><Html2React html={recipe_serves} /> Personnes</div>}
-                  {(recipe_preparation_time !== "") && <div><span>Préparation</span> <Html2React html={recipe_preparation_time} /></div>}
-                  {(recipe_just_cooking_time !== "") && <div>Cuisson <Html2React html={recipe_just_cooking_time} /></div>}
-                  {(recipe_cooking_time !== "") && <div>Temps total <Html2React html={recipe_cooking_time} /></div>}
-                  {(recipe_cooking_temperature !== "") && <div>Température <Html2React html={recipe_cooking_temperature} /></div>}
+                  {(recipe_serves !== "") && <div className="item d-flex"><img src={people} className="icon d-inline-block mr-3" alt="icon" width="40px" /><div><span>Portions</span><Html2React html={recipe_serves} /> Personnes</div></div>}
+                  {(recipe_preparation_time !== "") && <div className="item d-flex"><img src={apron} className="icon d-inline-block mr-3" alt="icon" width="40px" /><div><span>Préparation</span><Html2React html={recipe_preparation_time} /></div></div>}
+                  {(recipe_just_cooking_time !== "") && <div className="item d-flex"><img src={cookingtime} className="icon d-inline-block mr-3" alt="icon" width="40px" /><div><span>Cuisson</span> <Html2React html={recipe_just_cooking_time} /></div></div>}
+                  {(recipe_cooking_time !== "") && <div className="item d-flex"><img src={meal} className="icon d-inline-block mr-3" alt="icon" width="40px" /><div><span>Temps total</span> <Html2React html={recipe_cooking_time} /></div></div>}
+                  {(recipe_cooking_temperature !== "") && <div className="item d-flex"><img src={gasstove} className="icon d-inline-block mr-3" alt="icon" width="40px" /><div><span>Température</span> <Html2React html={recipe_cooking_temperature} /></div></div>}
 
                  
                 </div>
@@ -149,7 +155,17 @@ const Container = styled.div`
   .card-body{
     background-color: #44CFCB;
     color: #fff;
-    font-size: 24px;
+    font-size: 30px;
+    line-height:30px;
+
+    .item{
+
+      span{
+        display:block;
+        font-size:12px;
+        line-height:14px;
+      }
+    }
   }
 }
   

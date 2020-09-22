@@ -3,7 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
-import ReactLogo from './crazy.svg';
+import ReactLogo from './svg/crazy.svg';
 
 const Header = ({ state }) => {
   return (

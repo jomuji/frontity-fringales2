@@ -2,46 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "9f8a260fe713d344d6be",
+  "hash": "b2406b41875e03dcac44",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
-    "frontity-fringales2": [
-      "frontity-fringales2.module.js",
-      "frontity-fringales2.e63bf46bce4c1ec366b4.hot-update.js"
-    ],
+    "frontity-fringales2": "frontity-fringales2.module.js",
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "e63bf46bce4c1ec366b4.hot-update.json",
-      "size": 61,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "frontity-fringales2.e63bf46bce4c1ec366b4.hot-update.js",
-      "size": 114022,
-      "chunks": [
-        "frontity-fringales2"
-      ],
-      "chunkNames": [
-        "frontity-fringales2"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "frontity-fringales2.module.js",
-      "size": 5134304,
+      "size": 5156092,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -49,11 +20,52 @@
         "frontity-fringales2"
       ],
       "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/apron.svg",
+      "size": 808,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/cooking-time.svg",
+      "size": 1740,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
       "emitted": false
     },
     {
       "name": "images/crazy.svg",
       "size": 1759,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/customer.svg",
+      "size": 914,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/gas-stove.svg",
+      "size": 765,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/meal.svg",
+      "size": 15689,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -79,8 +91,7 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js",
-        "frontity-fringales2.e63bf46bce4c1ec366b4.hot-update.js"
+        "frontity-fringales2.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,8 +103,7 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js",
-        "frontity-fringales2.e63bf46bce4c1ec366b4.hot-update.js"
+        "frontity-fringales2.module.js"
       ],
       "children": {},
       "childAssets": {}
