@@ -21,6 +21,9 @@
     "@motifsmedia/motifs-frontity-theme": "^1.0.0",
     "frontity": "^1.10.1",
     "frontity-chakra-theme": "0.0.2",
+    "frontity-share": "^0.1.5",
+    "react-hook-form": "^6.8.4",
+    "react-wordpress-auth": "0.0.10",
     "styled-components": "^4.4.1"
   }
 }

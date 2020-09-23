@@ -2,17 +2,46 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "b2406b41875e03dcac44",
+  "hash": "e5290e052f98deed2479",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
-    "frontity-fringales2": "frontity-fringales2.module.js",
+    "frontity-fringales2": [
+      "frontity-fringales2.module.js",
+      "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
+    ],
     "list": "list.module.js"
   },
   "assets": [
     {
+      "name": "c41be3293cadcc4dc095.hot-update.json",
+      "size": 61,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js",
+      "size": 133118,
+      "chunks": [
+        "frontity-fringales2"
+      ],
+      "chunkNames": [
+        "frontity-fringales2"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "frontity-fringales2.module.js",
-      "size": 5156092,
+      "size": 5180735,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -20,8 +49,7 @@
         "frontity-fringales2"
       ],
       "info": {},
-      "emitted": false,
-      "isOverSizeLimit": true
+      "emitted": false
     },
     {
       "name": "images/apron.svg",
@@ -91,7 +119,8 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js"
+        "frontity-fringales2.module.js",
+        "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -103,7 +132,8 @@
         "frontity-fringales2"
       ],
       "assets": [
-        "frontity-fringales2.module.js"
+        "frontity-fringales2.module.js",
+        "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

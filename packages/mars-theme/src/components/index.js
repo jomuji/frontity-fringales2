@@ -8,6 +8,7 @@ import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
 //import '/style.css';
+//import { AuthProvider } from 'react-wordpress-auth';
 
 /**
  * Theme is the root React component of our theme. The one we will export

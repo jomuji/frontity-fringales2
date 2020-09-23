@@ -2,7 +2,7 @@ const settings = {
   "name": "frontity-fringales2",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
+      "url": "https://www.foodlabouffe.com",
       "title": "Food la bouffe",
       "description": "Foodlabouffe - Recettes du web"
     }
@@ -58,7 +58,8 @@ const settings = {
       }
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
+    "@frontity/html2react",
+    "frontity-share"
   ]
 };
 

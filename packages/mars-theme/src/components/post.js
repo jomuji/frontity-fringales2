@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+//import Login from "./Login";
 
 import people from './svg/customer.svg';
 import apron from './svg/apron.svg';
@@ -22,6 +23,8 @@ const Post = ({ state, actions, libraries }) => {
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
+
+  const SharingButtons = libraries.fills.share.SharingButtons;
 
   // ACF
   const liste_dingredients = post.acf["liste_dingredients"];
@@ -56,6 +59,7 @@ const Post = ({ state, actions, libraries }) => {
               <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                 <Categorie_name><Html2React html={categories_names[0]} /></Categorie_name>
                 <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} className="display-4 text-center w-75" />
+                <div className="p-2 text-white">{<SharingButtons />}</div>
                 
               </div>
           </div>
@@ -81,6 +85,8 @@ const Post = ({ state, actions, libraries }) => {
               </div>
             </div>
           </div>
+
+          
 
           <div className="row ingredients-etapes my-5">
             
