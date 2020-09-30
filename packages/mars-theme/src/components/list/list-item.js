@@ -41,7 +41,7 @@ const Item = ({ state, item }) => {
         )}
         </div>
         <div class="col-12 col-md-6">
-          <div class="card-body px-5 d-flex flex-column justify-content-between h-100">
+          <div class="card-body px-sm-5 d-flex flex-column justify-content-between h-100">
             <div className="small text-muted">
               {/* If the post has an author, we render a clickable author text. */}
               {author && (
