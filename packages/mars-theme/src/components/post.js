@@ -3,7 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
-//import Login from "./Login";
+
 
 import people from './svg/customer.svg';
 import apron from './svg/apron.svg';
@@ -104,6 +104,10 @@ const Post = ({ state, actions, libraries }) => {
               </div>
             </div>
           </div>
+
+          
+
+          
         
 
         {/* Only display author and date on posts */}
@@ -135,6 +139,8 @@ const Post = ({ state, actions, libraries }) => {
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
         <Html2React html={post.content.rendered} />
+
+        
         
       </Content>
     </Container>
@@ -207,7 +213,8 @@ const Categorie_name = styled.h2`
 `;
 
 const Title = styled.h1`
-  
+  font-family: 'Merriweather', serif;
+  font-style: italic;
   margin-bottom: 8px;
   color: #fff;
   

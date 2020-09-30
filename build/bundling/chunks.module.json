@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "e5290e052f98deed2479",
+  "hash": "da742ab78c2e3a31ff47",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
     "frontity-fringales2": [
       "frontity-fringales2.module.js",
-      "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
+      "frontity-fringales2.edae7fa7d4e482d31354.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "c41be3293cadcc4dc095.hot-update.json",
+      "name": "edae7fa7d4e482d31354.hot-update.json",
       "size": 61,
       "chunks": [],
       "chunkNames": [],
@@ -25,8 +25,8 @@
       "emitted": false
     },
     {
-      "name": "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js",
-      "size": 133118,
+      "name": "frontity-fringales2.edae7fa7d4e482d31354.hot-update.js",
+      "size": 133835,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -41,7 +41,7 @@
     },
     {
       "name": "frontity-fringales2.module.js",
-      "size": 5180735,
+      "size": 5182009,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -101,7 +101,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 48417,
+      "size": 83524,
       "chunks": [
         "list"
       ],
@@ -109,7 +109,7 @@
         "list"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true
     }
   ],
   "filteredAssets": 0,
@@ -120,7 +120,7 @@
       ],
       "assets": [
         "frontity-fringales2.module.js",
-        "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
+        "frontity-fringales2.edae7fa7d4e482d31354.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -133,7 +133,7 @@
       ],
       "assets": [
         "frontity-fringales2.module.js",
-        "frontity-fringales2.c41be3293cadcc4dc095.hot-update.js"
+        "frontity-fringales2.edae7fa7d4e482d31354.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

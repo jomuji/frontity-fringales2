@@ -8,7 +8,7 @@ const List = ({ state }) => {
   const data = state.source.get(state.router.link);
 
   return (
-    <Container>
+    <Container className="container">
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
@@ -38,7 +38,7 @@ const List = ({ state }) => {
 export default connect(List);
 
 const Container = styled.section`
-  width: 800px;
+  
   margin: 0;
   padding: 24px;
   list-style: none;
