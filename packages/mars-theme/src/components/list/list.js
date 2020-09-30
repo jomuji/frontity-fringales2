@@ -11,8 +11,8 @@ const List = ({ state }) => {
     <Container className="container">
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
-        <Header>
-          {data.taxonomy}:{" "}
+        <Header className="py-3">
+          Catégorie:{" "}
           <b>{decode(state.source[data.taxonomy][data.id].name)}</b>
         </Header>
       )}

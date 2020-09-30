@@ -34,14 +34,14 @@ const Item = ({ state, item }) => {
 
   return (
     <article className="card rounded-0 mb-5">
-      <div class="row no-gutters">
-        <div class="col-12 col-md-6">
+      <div className="row no-gutters">
+        <div className="col-12 col-md-6">
         {state.theme.featured.showOnList && (
           <FeaturedMedia id={item.featured_media} />
         )}
         </div>
-        <div class="col-12 col-md-6">
-          <div class="card-body px-sm-5 d-flex flex-column justify-content-between h-100">
+        <div className="col-12 col-md-6">
+          <div className="card-body px-sm-5 d-flex flex-column justify-content-between h-100">
             <div className="small text-muted">
               {/* If the post has an author, we render a clickable author text. */}
               {author && (

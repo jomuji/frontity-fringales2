@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "9ee99a23a503d85af529",
+  "hash": "e630e3a02b8b91a8247c",
   "publicPath": "/static/",
   "outputPath": "/Volumes/Macintosh HD/Users/jose/Documents/scripts/frontity-fringales2/build/static",
   "assetsByChunkName": {
     "frontity-fringales2": "frontity-fringales2.module.js",
     "list": [
       "list.module.js",
-      "list.da742ab78c2e3a31ff47.hot-update.js"
+      "list.8b804cf94c4b50cd1f91.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "da742ab78c2e3a31ff47.hot-update.json",
+      "name": "8b804cf94c4b50cd1f91.hot-update.json",
       "size": 46,
       "chunks": [],
       "chunkNames": [],
@@ -26,7 +26,7 @@
     },
     {
       "name": "frontity-fringales2.module.js",
-      "size": 5182009,
+      "size": 5431451,
       "chunks": [
         "frontity-fringales2"
       ],
@@ -85,8 +85,8 @@
       "emitted": false
     },
     {
-      "name": "list.da742ab78c2e3a31ff47.hot-update.js",
-      "size": 62219,
+      "name": "list.8b804cf94c4b50cd1f91.hot-update.js",
+      "size": 12294,
       "chunks": [
         "list"
       ],
@@ -101,7 +101,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 83555,
+      "size": 83782,
       "chunks": [
         "list"
       ],
@@ -142,7 +142,7 @@
       ],
       "assets": [
         "list.module.js",
-        "list.da742ab78c2e3a31ff47.hot-update.js"
+        "list.8b804cf94c4b50cd1f91.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
