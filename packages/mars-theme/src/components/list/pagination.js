@@ -20,23 +20,25 @@ const Pagination = ({ state, actions }) => {
   }, []);
 
   return (
-    <div>
-      {/* If there's a next page, render this link */}
-      {next && (
-        <Link link={next}>
-          <Text>← Older posts</Text>
-        </Link>
-      )}
-
-      {previous && next && " - "}
-
-      {/* If there's a previous page, render this link */}
+    <nav aria-label="Page navigation example">
+      <ul className="pagination justify-content-center">
       {previous && (
-        <Link link={previous}>
-          <Text>Newer posts →</Text>
-        </Link>
+        <li className="page-item">
+          <Link link={previous} className="page-link">
+            <Text>&laquo;</Text>
+          </Link>    
+        </li>
+        )
+      }
+      {next && (
+        <li className="page-item">
+          <Link link={next} className="page-link">
+            <Text>&raquo;</Text>
+          </Link>
+        </li>
       )}
-    </div>
+      </ul>
+    </nav>
   );
 };
 
@@ -46,7 +48,6 @@ const Pagination = ({ state, actions }) => {
  */
 export default connect(Pagination);
 
-const Text = styled.em`
+const Text = styled.strong`
   display: inline-block;
-  margin-top: 16px;
 `;

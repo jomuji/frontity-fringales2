@@ -3,19 +3,41 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
-import ReactLogo from './svg/crazy.svg';
+import ReactLogo from './svg/22.png';
 
 const Header = ({ state }) => {
   return (
     <>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </main>
+
+      
+    </div>
       <Container className="navbar navbar-expand-lg navbar-light bg-white">
         <StyledLink link="/" className="navbar-brand">
-        <img src={ReactLogo} className="logo" alt="React Logo" width="40px" /><Title>FOOD <span>la bouffe</span>{/* {state.frontity.title} */}</Title>
+        <img src={ReactLogo} className="logo" alt="React Logo" width="150px" /><Title>{/* {state.frontity.title} */}</Title>
         </StyledLink>
         {/* <Description>{state.frontity.description}</Description> */}
         <MobileMenu />
       
-      <Nav />
+        <Nav />
       </Container>
     </>
   );
